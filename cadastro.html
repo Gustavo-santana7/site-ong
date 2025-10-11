@@ -29,7 +29,7 @@
                     <input type="tel" name="tel" id="itel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(00) 00000-0000" title="formato:(00) 00000-0000" required>
                 </p>
                 <p>
-                     <label for="cpf">CPF</label>
+                     <label for="icpf">CPF</label>
                      <input type="text" name="cpf" id="icpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" title="formato:000.000.000-00" required>
                 </p>
                 <p>
@@ -37,7 +37,7 @@
                     <input type="date" name="data" id="idata" required>
                 </p>
                 <p>
-                    <label for="cep">CEP</label>
+                    <label for="icep">CEP</label>
                     <input type="text" name="cep" id="icep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" title="formato:00000-000" required>
                 </p>
                 <p>
@@ -51,7 +51,7 @@
                 <p>
                      <label for="complemento">Complemento</label>
           <input id="complemento" name="complemento" type="text" placeholder="Apto, Bloco, Casa (opcional)">
-        </div>
+        
                 </p>
                 <p>
                      <label for="bairro">Bairro</label>
@@ -60,7 +60,7 @@
                 <p>
                      <label for="cidade">Cidade</label>
           <input id="cidade" name="cidade" type="text" placeholder="Cidade" required>
-        </div>
+        
                 </p>
                 <p>
                      <label for="estado">Estado</label>
@@ -80,7 +80,15 @@
 
                 </p>
             </fieldset>
-        </form>
+        </form><br>
+
+        <picture>
+  <!-- Versão mais leve -->
+  <source srcset="imagens/img-contato.avif" type="image/avif">
+  <source srcset="imagens/img-contato.webp" type="image/webp">
+  <!-- caso o navegador não suporte os formatos acima -->
+  <img src="imagens/img-contato.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+</picture>
     </main>
 
     <footer>

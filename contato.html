@@ -7,10 +7,19 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Inicio</a></h1>
+        
     </header>
     <main>
-        <h2>Envie sua mensagem</h2>
+        <h1>Envie sua mensagem</h1>
+
+        <picture>
+  <!-- Versão mais leve -->
+  <source srcset="imagens/img-contato.avif" type="image/avif">
+  <source srcset="imagens/img-contato.webp" type="image/webp">
+  <!-- caso o navegador não suporte os formatos acima -->
+  <img src="imagens/img-contato.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+</picture>
+
 
         <form action="#" method="post">
             <fieldset>
@@ -21,10 +30,6 @@
                 </p>
             </fieldset>
         </form>
-
-        <section>
-            <img src="imagens/img.entre-em-contato.png" alt="">
-        </section>
     </main>
 </body>
 </html>
