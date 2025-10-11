@@ -1,2 +1,2 @@
 # site-ong
-site para ong desenvolvido para estudos na cruzeiro do sul
+Site desenvolvido por mim para aperfeiçoar meus estudos na Universidade Cruzeiro do Sul, utilizando HTML5 e praticando conceitos de semântica, formulários e multimídia.
