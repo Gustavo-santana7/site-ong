@@ -9,44 +9,22 @@
 </head>
 <body>
     <header>
+         <h1>Ong Esperança </h1>
+
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <h1>Ong Esperança </h1>
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
     </header>
 
-    <main>
-        <h1>Seja bem vindo a nossa plataforma</h1>
-        <p>A ONG Esperança é uma organização sem fins lucrativos que atua na promoção social e no apoio a comunidades em situação de vulnerabilidade. Nosso objetivo é transformar vidas por meio da educação, saúde e inclusão social, criando oportunidades para um futuro mais justo e solidário. <br>
+    <main id="app"></main>
 
-Com o apoio de voluntários e parceiros, realizamos projetos que levam alimentos, capacitação profissional e acolhimento a quem mais precisa. Junte-se a nós nessa missão de fazer a diferença! </p>
-
-<picture>
-  <!-- Versão mais leve -->
-  <source srcset="imagens/img-inicio.avif" type="image/avif">
-  <source srcset="imagens/img-inicio.webp" type="image/webp">
-  <!-- caso o navegador não suporte os formatos acima -->
-  <img src="imagens/img-inicio.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
-</picture>
-
-
-<section>
-    <h2>Navegue pelo site</h2>
-    <ul>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
-        <li><a href="projetos.html">Projetos e Voluntáriado</a></li>
-        <li><a href="contato.html">Entre em contato</a></li>
-    </ul>
-</section>
-    </main>
-
-    <footer>
+     <footer>
         <h2>Entre em contato</h2>
         <p>Tem alguma dúvida ou quer participar dos nossos projetos? <br> Fale conosco pelos canais abaixo:</p>
         <ul>
@@ -55,5 +33,217 @@ Com o apoio de voluntários e parceiros, realizamos projetos que levam alimentos
             <li><a href="contato.html">Emvie uma mensagem</a></li>
         </ul>
     </footer>
+
+
+        <script type="text/template" id="template-inicio">
+            <section>
+                <h1>Seja bem vindo a nossa plataforma</h1>
+                <p>A ONG Esperança é uma organização sem fins lucrativos que atua na promoção social e no apoio a comunidades em situação de vulnerabilidade. Nosso objetivo é transformar vidas por meio da educação, saúde e inclusão social, criando oportunidades para um futuro mais justo e solidário. <br>
+            
+                Com o apoio de voluntários e parceiros, realizamos projetos que levam alimentos, capacitação profissional e acolhimento a quem mais precisa. Junte-se a nós nessa missão de fazer a diferença! </p>
+            
+                <picture>
+                  <!-- Versão mais leve -->
+                  <source srcset="imagens/img-inicio.avif" type="image/avif">
+                  <source srcset="imagens/img-inicio.webp" type="image/webp">
+                  <!-- caso o navegador não suporte os formatos acima -->
+                  <img src="imagens/img-inicio.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+                </picture>
+            
+            
+                <section>
+                    <h2>Navegue pelo site</h2>
+                    <ul>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="projetos.html">Projetos e Voluntáriado</a></li>
+                <li><a href="contato.html">Entre em contato</a></li>
+                    </ul>
+                </section>
+            </section>
+        </script>
+
+        <script type="text/template" id="template-projetos">
+            <section>
+                <h2>seja um apoiador</h2>
+        <picture>
+  <!-- Versão mais leve -->
+  <source srcset="imagens/img-voluntario.avif" type="image/avif">
+  <source srcset="imagens/img-voluntario.webp" type="image/webp">
+  <!-- caso o navegador não suporte os formatos acima -->
+  <img src="imagens/img-voluntario.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+</picture>
+
+        <p>Na ONG Esperança, acreditamos que juntos podemos fazer a diferença na vida de muitas pessoas. Nossos projetos são desenvolvidos com o objetivo de promover a inclusão social, oferecer suporte às comunidades vulneráveis e criar oportunidades para um futuro melhor. <br>
+Ao se tornar um apoiador, você estará contribuindo diretamente para a transformação de vidas por meio de ações concretas, como distribuição de alimentos, programas educacionais e atividades de capacitação profissional. Sua ajuda é fundamental para que possamos continuar nosso trabalho e alcançar ainda mais pessoas que precisam de apoio.</p> <br>
+
+<h2>Nossos Projetos</h2>
+
+    <section class="cards-projetos">
+      <div class="card">
+        <h3>Educar para o Futuro</h3>
+        <p>Promove educação básica para jovens e adultos.</p>
+        <span class="tag verde">Ativo</span><br>
+        <button class="btn">Doar</button>
+      </div>
+
+      <div class="card">
+        <h3>Saúde em Movimento</h3>
+        <p>Atendimento médico gratuito em comunidades.</p>
+        <span class="tag azul">Em andamento</span><br>
+        <button class="btn">Apoiar</button>
+      </div>
+
+      <div class="card">
+        <h3>Conecta Esperança</h3>
+        <p>Capacitação digital e inclusão tecnológica.</p>
+        <span class="tag vermelha">Urgente</span><br>
+        <button class="btn">Participar</button>
+      </div>
+    </section>
+
+
+        <h2>Como doar</h2>
+        <p>Existem várias formas de contribuir com a ONG Esperança. Você pode fazer doações financeiras, que serão utilizadas para financiar nossos projetos e ações. Além disso, aceitamos doações de alimentos, roupas e materiais escolares, que são distribuídos diretamente às famílias atendidas. <br>
+
+            <section class="cards-projetos">
+                <div class="card">
+                    <h3>Doação minima</h3>
+                    <p>Doar 5R$</p>
+                    <button class="btn">Doar</button>
+                </div>
+                <div class="card">
+                    <h3>Doar</h3>
+                    <p>10R$</p>
+                    <button class="btn">Doar</button>
+                </div>
+                <div class="card">
+                    <h3>Doar</h3>
+                    <p>20R$</p>
+                    <button class="btn">Doar</button>
+                </div>
+            </section>
+
+        <p>Para doar outra quantia ou se voluntáriar acesse nossos canais de comunicação:</p>
+        <ul>
+            <li><strong>PIX</strong>simulaçãoong2025FAKE</li>
+            <li><strong>Email</strong>@exemploong.com</li>
+            <li><strong>Telefone</strong> (00) 00000-0000</li>
+            <li><a href="contato.html">Emvie uma mensagem</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+            </section>
+        </script>
+
+        <script type="text/template" id="template-cadastro">
+            <section>
+                <h2>Preencha seus dados para se cadastrar</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required>
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required>
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(00) 00000-0000" title="formato:(00) 00000-0000" required>
+                </p>
+                <p>
+                     <label for="icpf">CPF</label>
+                     <input type="text" name="cpf" id="icpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" title="formato:000.000.000-00" required>
+                </p>
+                <p>
+                    <label for="idata">Data de nascimento:</label>
+                    <input type="date" name="data" id="idata" required>
+                </p>
+                <p>
+                    <label for="icep">CEP</label>
+                    <input type="text" name="cep" id="icep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" title="formato:00000-000" required>
+                </p>
+                <p>
+                     <label for="logradouro">Logradouro / Endereço</label>
+          <input id="logradouro" name="logradouro" type="text" placeholder="Rua, Av., Praça..." required>
+                </p>
+                <p>
+                    <label for="numero">Número</label>
+          <input id="numero" name="numero" type="text" inputmode="numeric" placeholder="123" required>
+                </p>
+                <p>
+                     <label for="complemento">Complemento</label>
+          <input id="complemento" name="complemento" type="text" placeholder="Apto, Bloco, Casa (opcional)">
+        
+                </p>
+                <p>
+                     <label for="bairro">Bairro</label>
+          <input id="bairro" name="bairro" type="text" placeholder="Bairro" required>
+                </p>
+                <p>
+                     <label for="cidade">Cidade</label>
+          <input id="cidade" name="cidade" type="text" placeholder="Cidade" required>
+        
+                </p>
+                <p>
+                     <label for="estado">Estado</label>
+          <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option><option value="AM">AM</option>
+            <option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option>
+            <option value="GO">GO</option><option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+            <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option><option value="PR">PR</option>
+            <option value="PE">PE</option><option value="PI">PI</option><option value="RJ">RJ</option><option value="RN">RN</option>
+            <option value="RS">RS</option><option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+            <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+          </select>
+                </p>
+                <p>
+                    <button type="submit" class="btn">Enviar</button>
+                </p>
+            </fieldset>
+        </form><br>
+
+        <picture>
+  <!-- Versão mais leve -->
+  <source srcset="imagens/img-contato.avif" type="image/avif">
+  <source srcset="imagens/img-contato.webp" type="image/webp">
+  <!-- caso o navegador não suporte os formatos acima -->
+  <img src="imagens/img-contato.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+</picture>
+            </section>
+        </script>
+
+        <script type="text/template" id="contato">
+            <section>
+                <h1>Envie sua mensagem</h1>
+
+        <picture>
+  <!-- Versão mais leve -->
+  <source srcset="imagens/img-contato.avif" type="image/avif">
+  <source srcset="imagens/img-contato.webp" type="image/webp">
+  <!-- caso o navegador não suporte os formatos acima -->
+  <img src="imagens/img-contato.png" alt="Voluntários em um projeto comunitário" loading="lazy" width="400" height="400">
+</picture>
+
+
+        <form action="#" method="post" class="contato-form">
+            <fieldset>
+                <legend>Escreva sua mensagem</legend>
+                <p>
+                    <label for="imsg">Mensagem</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="submitBtn">Enviar</button>
+                </p>
+            </fieldset>
+        </form>
+            </section>
+        </script>
+
+        <script src="app.js"></script>
 </body>
 </html>
