@@ -14,6 +14,16 @@ if(template) {
     app.innerHTML = "<p>Página não encontrada.</p>";
 }
 
+//Fechar menu
+fecharMenu();
+}
+
+//Fechar automáticamente
+function fecharMenu(){
+    const menuToggle = document.getElementById("menu-toggle");
+    if (menuToggle) menuToggle.checked = false;
+}
+
 window.addEventListener("hashchange", () =>
 carregarPagina(location.hash.replace("#", ""))
 );
@@ -21,5 +31,29 @@ carregarPagina(location.hash.replace("#", ""))
 window.addEventListener("DOMContentLoaded", () =>
 carregarPagina(location.hash.replace("#", ""))
 );
+
+//Validação de formulário
+const form = document.getElementById("formCadastro");
+if (form) {
+    form.addEventListener("submit", (e) =>{
+        e.preventDefault();
+        const campos = form.querySelectorAll("input[required]");
+        let valido = true;
+        campos.forEach( campo => {
+            if (!campo.ariaValueMax.trim()) {
+                valido = false;
+                campo.style.border = "2px solid red";
+            } else {
+                campo.style.border = "2px solid green";
+            }
+        });
+        mostrarFeedback(valido ? "Cadastro enviado com sucesso!" : "Por favor, preencha todos os campos corretamente.");
+    });
 }
 
+// Sistema de alerta feedback
+function mostrarFeedback(msg) {
+    const modal = document.getElementById("modal");
+    document.getElementById("modal-message").innerText = msg;
+    modal.style.display = "flex";
+}
