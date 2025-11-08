@@ -63,6 +63,7 @@ header h1 {
 
 .menu-icon {
   display: none;
+  outline: none;
   font-size: 30px;
   position: absolute;
   top: 16px;
@@ -82,6 +83,15 @@ nav.menu a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+}
+
+.menu-icon:focus {
+  box-shadow: 0 0 0 3px #94d2bd;
+}
+
+nav.menu a:focus {
+  outline: 3px solid #94d2bd;
+  outline-offset: 4px;
 }
 
 nav.menu a:hover {
