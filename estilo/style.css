@@ -44,6 +44,15 @@ body {
     min-height: 100vh;
 }
 
+body[data-theme="dark"]{
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body[data-theme="dark"] header {
+  background: #0a9396;
+}
+
 header{
     position: relative;
     background-color: var(--cor-primaria);

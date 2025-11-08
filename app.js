@@ -57,3 +57,13 @@ function mostrarFeedback(msg) {
     document.getElementById("modal-message").innerText = msg;
     modal.style.display = "flex";
 }
+
+// 🌙 Alternar tema claro/escuro
+const toggleButton = document.getElementById("toggle-theme");
+
+if (toggleButton) {
+  toggleButton.addEventListener("click", () => {
+    document.body.dataset.theme =
+      document.body.dataset.theme === "dark" ? "light" : "dark";
+  });
+}
